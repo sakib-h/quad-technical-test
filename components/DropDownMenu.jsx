@@ -20,13 +20,13 @@ const DropdownMenu = () => {
         <div className="relative">
             <button
                 onClick={toggleDropdown}
-                className="bg-primary text-primary-text font-dmSans font-bold py-2 px-4 flex justify-center items-center rounded gap-3"
+                className="bg-[#fefefe] text-[#11263c] font-dmSans font-bold py-2 px-4 flex justify-center items-center rounded gap-3"
             >
                 <span>MENU</span>
                 {isDropdownOpen ? (
                     <MdOutlineKeyboardArrowUp className="text-2xl" />
                 ) : (
-                    <MdOutlineKeyboardArrowDown classNvvame="text-2xl" />
+                    <MdOutlineKeyboardArrowDown className="text-2xl" />
                 )}
             </button>
             {isDropdownOpen && (

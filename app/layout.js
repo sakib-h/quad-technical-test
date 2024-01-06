@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={`${dmSans.variable} ${baloo.variable}`}>
-                <div className="min-w-full min-h-screen bg-primary-bg">
+                <div className="min-w-full min-h-screen bg-[#eeeff0]">
                     <Navbar />
                     {children}
                 </div>

@@ -16,17 +16,17 @@ const Navbar = () => {
                                 <input
                                     type="text"
                                     placeholder="Search Audio book"
-                                    className="w-full px-10 py-2 rounded-lg outline-none border-none bg-primary text-[#848484] placeholder:text-[#848484] font-dmSans"
+                                    className="w-full px-10 py-2 rounded-lg outline-none border-none bg-[#fefefe] text-[#848484] placeholder:text-[#848484] font-dmSans"
                                 />
-                                <RiSearchLine className="absolute left-0 top-[50%] translate-y-[-50%] text-2xl text-secondary ml-2" />
+                                <RiSearchLine className="absolute left-0 top-[50%] translate-y-[-50%] text-2xl text-[#fd6011] ml-2" />
                             </div>
                             <div>
                                 <DropdownMenu />
                             </div>
                         </div>
                     </div>
-                    <div className="search-bar hidden md:inline-block bg-secondary p-2 rounded-full">
-                        <AiOutlineUser className="text-2xl text-primary" />
+                    <div className="search-bar hidden md:inline-block bg-[#fd6011] p-2 rounded-full">
+                        <AiOutlineUser className="text-2xl text-[#fefefe]" />
                     </div>
                 </div>
             </div>

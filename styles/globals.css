@@ -13,6 +13,6 @@
     }
 
     .dropdown-menu-item {
-        @apply block px-4 py-2 text-base text-primary-text hover:bg-gray-100 hover:text-secondary duration-300 cursor-pointer;
+        @apply block px-4 py-2 text-base text-[#11263c] hover:bg-gray-100 hover:text-[#fd6011] duration-300 cursor-pointer;
     }
 }
