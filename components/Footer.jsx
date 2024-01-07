@@ -2,9 +2,6 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-
-import image2 from "../public/images/image2.png";
-import Image from "next/image";
 const Footer = () => {
     return (
         <footer className="bg-[#f99f1c] font-dmSans">
@@ -56,8 +53,8 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-span-1">
-                            <Image
-                                src={image2}
+                            <img
+                                src="/images/image2.png"
                                 className="w-[80%]"
                                 alt="footer-icon"
                             />

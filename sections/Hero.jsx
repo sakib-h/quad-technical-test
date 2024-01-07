@@ -1,6 +1,3 @@
-import Image from "next/image";
-import image1 from "../public/images/image1.png";
-
 const Hero = () => {
     return (
         <header>
@@ -15,7 +12,7 @@ const Hero = () => {
                         </p>
                     </div>
                     <div className="self-end">
-                        <Image src={image1} alt="hero-icon" />
+                        <img src="/images/image1.png" alt="hero-icon" />
                     </div>
                 </div>
 
@@ -29,9 +26,9 @@ const Hero = () => {
                             Authentic Food, Quick Service, Fast Delivery
                         </p>
                     </div>
-                    <div className="bg-[#fd9460] rounded-xl relative min-h-[280px]">
-                        <Image
-                            src={image1}
+                    <div className="bg-[#fd9460] rounded-xl relative min-h-[200px]">
+                        <img
+                            src="/images/image1.png"
                             alt="mobile-icon"
                             className="absolute bottom-0"
                         />
