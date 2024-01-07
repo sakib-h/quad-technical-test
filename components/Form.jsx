@@ -64,10 +64,10 @@ const Form = () => {
 
     return (
         <form
-            className="max-w-md mx-auto font-dmSans bg-white p-8 shadow-md rounded-md mt-10 relative"
+            className="max-w-md mx-auto font-dmSans bg-white p-8 shadow-md rounded-md mt-10 relative flex flex-col gap-6"
             onSubmit={handleSubmit}
         >
-            <div className="mb-4 relative">
+            <div className="relative">
                 <label className="text-gray-700 text-sm font-bold mb-2">
                     Name:
                 </label>
@@ -79,13 +79,13 @@ const Form = () => {
                     className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
                 {errors.name && (
-                    <span className="absolute bottom-0 left-0 text-red-500">
+                    <span className="absolute bottom-[-25px] left-0 text-red-500">
                         {errors.name}
                     </span>
                 )}
             </div>
 
-            <div className="mb-4 relative">
+            <div className="relative">
                 <label className="text-gray-700 text-sm font-bold mb-2">
                     Price:
                 </label>
@@ -97,13 +97,13 @@ const Form = () => {
                     className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
                 {errors.price && (
-                    <span className="absolute bottom-0 left-0 text-red-500">
+                    <span className="absolute bottom-[-25px] left-0 text-red-500">
                         {errors.price}
                     </span>
                 )}
             </div>
 
-            <div className="mb-4">
+            <div className="relative">
                 <label className="text-gray-700 text-sm font-bold mb-2">
                     Image URL:
                 </label>
@@ -115,11 +115,13 @@ const Form = () => {
                     className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
                 {errors.imageUrl && (
-                    <span className="text-red-500">{errors.imageUrl}</span>
+                    <span className="absolute bottom-[-25px] left-0 text-red-500">
+                        {errors.imageUrl}
+                    </span>
                 )}
             </div>
 
-            <div className="mb-4">
+            <div className="">
                 <label className="text-gray-700 text-sm font-bold mb-2">
                     Is Popular:
                 </label>
@@ -132,7 +134,7 @@ const Form = () => {
                 />
             </div>
 
-            <div className="mb-4">
+            <div className="">
                 <label className="text-gray-700 text-sm font-bold mb-2">
                     Is Recommended:
                 </label>
