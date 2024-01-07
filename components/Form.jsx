@@ -67,8 +67,8 @@ const Form = () => {
             className="max-w-md mx-auto font-dmSans bg-white p-8 shadow-md rounded-md mt-10 relative"
             onSubmit={handleSubmit}
         >
-            <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
+            <div className="mb-4 relative">
+                <label className="text-gray-700 text-sm font-bold mb-2">
                     Name:
                 </label>
                 <input
@@ -79,12 +79,14 @@ const Form = () => {
                     className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
                 {errors.name && (
-                    <span className="text-red-500">{errors.name}</span>
+                    <span className="absolute bottom-0 left-0 text-red-500">
+                        {errors.name}
+                    </span>
                 )}
             </div>
 
-            <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
+            <div className="mb-4 relative">
+                <label className="text-gray-700 text-sm font-bold mb-2">
                     Price:
                 </label>
                 <input
@@ -95,12 +97,14 @@ const Form = () => {
                     className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
                 {errors.price && (
-                    <span className="text-red-500">{errors.price}</span>
+                    <span className="absolute bottom-0 left-0 text-red-500">
+                        {errors.price}
+                    </span>
                 )}
             </div>
 
             <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
+                <label className="text-gray-700 text-sm font-bold mb-2">
                     Image URL:
                 </label>
                 <input
@@ -116,7 +120,7 @@ const Form = () => {
             </div>
 
             <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
+                <label className="text-gray-700 text-sm font-bold mb-2">
                     Is Popular:
                 </label>
                 <input
@@ -129,7 +133,7 @@ const Form = () => {
             </div>
 
             <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
+                <label className="text-gray-700 text-sm font-bold mb-2">
                     Is Recommended:
                 </label>
                 <input
