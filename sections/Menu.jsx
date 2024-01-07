@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import SwiperSlider from "@/components/SwiperSlider";
 import fetchData from "@/lib/fetchData";
 

@@ -16,6 +16,9 @@
         @apply block px-4 py-2 text-[1rem] text-[#11263c] hover:bg-gray-100 hover:text-[#fd6011] duration-300 cursor-pointer;
     }
 }
+.swiper {
+    z-index: 0 !important;
+}
 
 .swiper-button-prev,
 .swiper-button-next {

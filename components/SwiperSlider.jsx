@@ -5,9 +5,14 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import MenuCard from "./MenuCard";
 import Button from "./Button";
+import { useStateContext } from "@/providers/StateProvider";
+import Modal from "./Modal";
+
 const SwiperSlider = ({ items, title }) => {
+    const { state } = useStateContext();
+    console.log(state);
     return (
-        <div>
+        <div className="relative">
             <div className="flex justify-between items-center ">
                 <h2 className="text-[1.5rem]  font-semibold text-[#0c1b2b] mb-3">
                     {title}
@@ -35,6 +40,8 @@ const SwiperSlider = ({ items, title }) => {
                     ))}
                 </div>
             </Swiper>
+
+            {state.isOpen && <Modal />}
         </div>
     );
 };
