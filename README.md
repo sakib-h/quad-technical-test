@@ -1,37 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Name
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project serves as the frontend implementation of a website developed using Next.js. It fulfills the requirements outlined by [Company Name] for an internship role. The project involves the development of the website's front end, integrating various design elements provided by the company.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Dependencies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project relies on the following dependencies:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Main Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+-   Next.js (v14.0.4): Primary framework for building the website.
+-   React (>= 18), React-DOM (>= 18): Used for the user interface and component management.
+-   React-Hook-Form (>= 7.49.2): Handles form logic and validation.
+-   React-Icons (>= 4.12.0): Utilized for incorporating icons in the UI.
+-   Swiper (>= 11.0.5): Used for creating sliders or carousels.
 
-## Learn More
+### Development Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+-   Autoprefixer (>= 10.0.1): Adds vendor prefixes to CSS rules.
+-   ESLint (>= 8), ESLint-Config-Next (14.0.4): Linting for code quality.
+-   PostCSS (>= 8): Transforms CSS with JavaScript plugins.
+-   Tailwind CSS (>= 3.3.0): CSS framework for styling.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The project structure is organized as follows:
 
-## Deploy on Vercel
+/
+|-- pages/ # Contains Next.js page components
+|-- components/ # Reusable UI components
+|-- context/ # Utilized React Context API for state management
+|-- styles/ # Styling related files (CSS/SCSS)
+|-- public/ # Assets such as images, fonts, etc.
+|-- ...
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features Implemented
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# quad-technical-test
+1. Next.js (v14) Implementation: Utilized the latest version of Next.js for website development.
+2. React Context API: Employed for efficient state management across the application.
+3. Form Validation: Implemented form validation using React-Hook-Form without external libraries.
+
+## Installation & Usage
+
+1. Clone the repository: git clone https://github.com/your-repo.git
+2. Install dependencies: npm install or yarn install
+3. Run the development server: npm run dev or yarn dev
+4. Access the website locally via http://localhost:3000 in your browser.
+
+## Additional Notes
+
+-   Node.js and npm/yarn are required to run the project locally.
+-   Follow Next.js deployment guidelines for production build and deployment.
+
+## Contributing
+
+Contributions, bug reports, and feature requests are welcome. Open issues or pull requests for discussion and collaboration.
+
+## License
+
+This project is licensed under the [MIT License](insert-link-to-license).
+
+Feel free to modify this readme to suit your project specifics.

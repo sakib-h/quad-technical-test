@@ -21,7 +21,7 @@ const Footer = () => {
                                         className="w-full h-full outline-none border-none text-[#848484] placeholder:text-[#848484]"
                                     />
 
-                                    <div className="absolute right-5 top-[50%] translate-y-[-50%] font-semibold">
+                                    <div className="absolute right-5 top-[50%] translate-y-[-50%] font-semibold z-0">
                                         <button className="bg-[#fd6011] flex flex-row items-center gap-2 px-10 py-2 rounded-md text-[#f9d3c1]">
                                             Subscribe
                                             <HiOutlineArrowRight />
