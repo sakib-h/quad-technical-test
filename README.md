@@ -1,8 +1,8 @@
-# Project Name
+# Project Name: Quad-Technical-Test
 
 ## Overview
 
-This project serves as the frontend implementation of a website developed using Next.js. It fulfills the requirements outlined by [Company Name] for an internship role. The project involves the development of the website's front end, integrating various design elements provided by the company.
+This project serves as the frontend implementation of a website developed using Next.js. It fulfills the requirements outlined by quadtheoryltd for an internship role. The project involves the development of the website's front end, integrating various design elements provided by the company.
 
 ## Dependencies
 
@@ -27,19 +27,21 @@ This project relies on the following dependencies:
 
 The project structure is organized as follows:
 
+```
 /
 |-- pages/ # Contains Next.js page components
 |-- components/ # Reusable UI components
 |-- context/ # Utilized React Context API for state management
-|-- styles/ # Styling related files (CSS/SCSS)
+|-- styles/ # Styling related files (CSS)
 |-- public/ # Assets such as images, fonts, etc.
 |-- ...
+```
 
 ## Features Implemented
 
 1. Next.js (v14) Implementation: Utilized the latest version of Next.js for website development.
 2. React Context API: Employed for efficient state management across the application.
-3. Form Validation: Implemented form validation using React-Hook-Form without external libraries.
+3. Form Validation: Implemented form validation without any external libraries.
 
 ## Installation & Usage
 
@@ -56,9 +58,3 @@ The project structure is organized as follows:
 ## Contributing
 
 Contributions, bug reports, and feature requests are welcome. Open issues or pull requests for discussion and collaboration.
-
-## License
-
-This project is licensed under the [MIT License](insert-link-to-license).
-
-Feel free to modify this readme to suit your project specifics.

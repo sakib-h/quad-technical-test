@@ -10,7 +10,15 @@ import Modal from "./Modal";
 
 const SwiperSlider = ({ items, title }) => {
     const { state } = useStateContext();
-    console.log(state);
+    let filteredItem;
+    if (state.data.length > 0) {
+        const newItem = state.data[0];
+
+        filteredItem = [...items, newItem];
+    } else {
+        filteredItem = items;
+    }
+
     return (
         <div className="relative">
             <div className="flex justify-between items-center ">
@@ -33,7 +41,7 @@ const SwiperSlider = ({ items, title }) => {
                 className="mySwiper"
             >
                 <div>
-                    {items.map((item) => (
+                    {filteredItem.map((item) => (
                         <SwiperSlide key={item.Id}>
                             <MenuCard item={item} />
                         </SwiperSlide>

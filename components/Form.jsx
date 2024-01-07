@@ -6,9 +6,9 @@ const Form = () => {
     const { state, dispatch } = useStateContext();
 
     const [formData, setFormData] = useState({
-        name: "",
+        Name: "",
         price: "",
-        imageUrl: "",
+        ImageUrl: "",
         isPopular: false,
         isRecommended: false,
     });
@@ -28,7 +28,7 @@ const Form = () => {
     const validateForm = () => {
         let newErrors = {};
 
-        if (!formData.name.trim()) {
+        if (!formData.Name.trim()) {
             newErrors.name = "Name is required";
         }
 
@@ -36,7 +36,7 @@ const Form = () => {
             newErrors.price = "Price must be a number";
         }
 
-        if (!formData.imageUrl.trim()) {
+        if (!formData.ImageUrl.trim()) {
             newErrors.imageUrl = "Image URL is required";
         }
 
@@ -48,8 +48,17 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (validateForm()) {
-            console.log("Form data:", formData);
+        const isFormValidate = validateForm();
+        if (isFormValidate) {
+            dispatch({
+                type: "ADD_ITEMS",
+                payload: {
+                    ...formData,
+                },
+            });
+            dispatch({
+                type: "IS_CLOSE",
+            });
         }
     };
 
@@ -64,8 +73,8 @@ const Form = () => {
                 </label>
                 <input
                     type="text"
-                    name="name"
-                    value={formData.name}
+                    name="Name"
+                    value={formData.Name}
                     onChange={handleChange}
                     className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
@@ -96,8 +105,8 @@ const Form = () => {
                 </label>
                 <input
                     type="text"
-                    name="imageUrl"
-                    value={formData.imageUrl}
+                    name="ImageUrl"
+                    value={formData.ImageUrl}
                     onChange={handleChange}
                     className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />

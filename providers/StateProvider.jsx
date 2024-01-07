@@ -4,6 +4,7 @@ import { createContext, useReducer, useContext } from "react";
 export const StateContext = createContext();
 const initialState = {
     isOpen: false,
+    data: [],
 };
 
 const stateReducer = (state, action) => {
@@ -17,6 +18,11 @@ const stateReducer = (state, action) => {
             return {
                 ...state,
                 isOpen: false,
+            };
+        case "ADD_ITEMS":
+            return {
+                ...state,
+                data: [...state.data, action.payload],
             };
         default:
             return state;
