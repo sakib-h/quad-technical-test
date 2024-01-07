@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="container">
                 {/* web footer */}
                 <div className="hidden md:grid">
-                    <div className="grid grid-cols-3 items-center justify-between gap-20">
+                    <div className="grid grid-cols-3 py-5 items-center justify-between gap-20">
                         <div className="col-span-2 w-full">
                             <div className="flex flex-col gap-10">
                                 <div className="relative w-[80%] bg-[#fefefe] p-5 rounded-lg">
@@ -56,7 +56,11 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-span-1">
-                            <Image src={image2} className="w-[80%]" />
+                            <Image
+                                src={image2}
+                                className="w-[80%]"
+                                alt="footer-icon"
+                            />
                         </div>
                     </div>
                 </div>

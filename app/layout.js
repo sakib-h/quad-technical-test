@@ -2,6 +2,7 @@ import { DM_Sans, Baloo_Bhaijaan_2 } from "next/font/google";
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import StateProvider from "@/providers/StateProvider";
 
 const dmSans = DM_Sans({
     subsets: ["latin"],
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
             <body className={`${dmSans.variable} ${baloo.variable}`}>
                 <div className="min-w-full min-h-screen bg-[#eeeff0]">
                     <Navbar />
-                    {children}
+                    <StateProvider>{children}</StateProvider>
                     <Footer />
                 </div>
             </body>

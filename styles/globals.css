@@ -16,3 +16,10 @@
         @apply block px-4 py-2 text-[1rem] text-[#11263c] hover:bg-gray-100 hover:text-[#fd6011] duration-300 cursor-pointer;
     }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #eeeff0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}

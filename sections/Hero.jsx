@@ -15,7 +15,7 @@ const Hero = () => {
                         </p>
                     </div>
                     <div className="self-end">
-                        <Image src={image1} />
+                        <Image src={image1} alt="hero-icon" />
                     </div>
                 </div>
 
@@ -30,7 +30,11 @@ const Hero = () => {
                         </p>
                     </div>
                     <div className="bg-[#fd9460] rounded-xl relative min-h-[280px]">
-                        <Image src={image1} className="absolute bottom-0" />
+                        <Image
+                            src={image1}
+                            alt="mobile-icon"
+                            className="absolute bottom-0"
+                        />
                     </div>
                 </div>
             </div>
